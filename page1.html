@@ -1,0 +1,419 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta name="keywords" content="" />
+<meta name="description" content="" />
+<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+<title>1.Топология  1 - Электронный учебник</title>
+<link href="style.css" rel="stylesheet" type="text/css" media="screen" />
+<link rel="shortcut icon" href="favicon.png" /> 
+<script type="text/javascript" src="jwplayer/jwplayer.js"></script>
+<meta name="generator" content="TurboSite 1.7.1" />
+
+</head>
+
+<body>
+<div id="wrapper">
+	<div id="header-wrapper">
+	<div id="header">
+		<div id="logo">
+			<h1><a href="index.html">Электронный учебник</a></h1>
+			<p>Сети и топология сетей</p>
+		</div>
+	</div>
+	</div>
+	<!-- end #header -->
+	<div id="page">
+	<div id="page-bgtop">
+	<div id="page-bgbtm">
+		<div id="content">
+			<div class="post">
+				<h2 class="title">1.Топология  1</h2>
+				<div style="clear: both;">&nbsp;</div>
+				<div class="entry">
+					
+<P style="MARGIN: 0cm 0cm 0pt" class=MsoNoSpacing><B 
+style="mso-bidi-font-weight: normal">Лекция 2. Локальные вычислительные 
+сети<o:p></o:p></B></P>
+<P style="MARGIN: 0cm 0cm 0pt" class=MsoNoSpacing>Содержание</P>
+<P style="MARGIN: 0cm 0cm 0pt" class=MsoNoSpacing>2.1 Топологии вычислительной 
+сети</P>
+<P style="MARGIN: 0cm 0cm 0pt" class=MsoNoSpacing>2.1.1 Топология типа 
+«звезда»</P>
+<P style="MARGIN: 0cm 0cm 0pt" class=MsoNoSpacing>2.1.2 Кольцевая топология</P>
+<P style="MARGIN: 0cm 0cm 0pt" class=MsoNoSpacing>2.1.3 Шинная топология.</P>
+<P style="MARGIN: 0cm 0cm 0pt" class=MsoNoSpacing>2.3.4.Деревовидная 
+топология</P>
+<P style="MARGIN: 0cm 0cm 0pt" class=MsoNoSpacing><o:p>&nbsp;</o:p></P>
+<P style="MARGIN: 0cm 0cm 0pt" class=MsoNoSpacing><B>2 ЛОКАЛЬНЫЕ ВЫЧИСЛИТЕЛЬНЫЕ 
+СЕТИ<o:p></o:p></B></P>
+<P style="MARGIN: 0cm 0cm 0pt" class=MsoNoSpacing><o:p>&nbsp;</o:p></P>
+<P style="MARGIN: 0cm 0cm 0pt" class=MsoNoSpacing>В общем случае под локальной 
+вычислительной сетью (ЛВС) понимают такую сеть, в которой все оборудование узлов 
+сети (рабочие станции и периферийные устройства), объединяемое физическими 
+линиями, размещается в пределах небольшой территории, ограниченной одним или 
+несколькими помещениями, на расстоянии не более чем 1 - 2 км друг от друга. 
+Такая сеть является более специализированной по классу решаемых задач 
+(банковская, государственного учреждения), однако часто требует обмена и 
+протокольной совместимости с другими локальными или глобальными (корпоративными) 
+сетями.</P>
+<P style="MARGIN: 0cm 0cm 0pt" class=MsoNoSpacing>В ЛВС наиболее эффективное 
+средство связи между системами, объединяемыми в сеть, - последовательный 
+интерфейс. В последовательных интерфейсах в качестве передающей среды 
+используются коаксиальные кабели, витые пары, волоконно-оптические кабели, 
+которые обеспечивают высокую пропускную способность до 100 Мбит/сек и более. При 
+использовании таких каналов связи строятся различные конфигурации вычислительных 
+сетей (топологии ЛВС). Наиболее распространенные конфигурации - звездная, 
+кольцевая, шинная и деревовидная.</P>
+<P style="MARGIN: 0cm 0cm 0pt" class=MsoNoSpacing><o:p>&nbsp;</o:p></P>
+<P style="MARGIN: 0cm 0cm 0pt" class=MsoNoSpacing><B>2.1 ТОПОЛОГИИ 
+ВЫЧИСЛИТЕЛЬНОЙ СЕТИ</B></P>
+<P style="MARGIN: 0cm 0cm 0pt" class=MsoNoSpacing><B>2.1.1 Топология типа 
+«звезда»</B></P>
+<P style="MARGIN: 0cm 0cm 0pt" class=MsoNoSpacing>Концепция топологии сети в 
+виде звезды пришла из области больших ЭВМ, в которой головная машина получает и 
+обрабатывает все данные с периферийных устройств как активный узел обработки 
+данных. Вся информация между двумя рабочими станциями проходит через центральный 
+узел сети Сети с такой топологией строятся, как правило, на базе метода 
+коммутации каналов. В этом случае перед началом передачи информации 
+абонент-инициатор передачи (вызывающий узел) запрашивает у центрального узла 
+установление физического или логического соединения с абонентом-партнером 
+(вызываемом узлом). После установления соединения соответствующий физический или 
+логический путь монопольно используется абонентами-партнерами для обмена 
+информацией. По окончании обмена один из абонентов запрашивает у центрального 
+узла разъединения.</P>
+<P style="MARGIN: 0cm 0cm 0pt" 
+class=MsoNoSpacing>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+<IMG class=image alt=star.jpg 
+src="user-images/star.jpg"></P>
+<P style="MARGIN: 0cm 0cm 0pt" class=MsoNoSpacing>Кабельное соединение довольно 
+простое, так как каждая рабочая станция связана с узлом. Затраты на прокладку 
+кабелей высокие, особенно когда центральный узел географически расположен не в 
+центре топологии</P>
+<P style="MARGIN: 0cm 0cm 0pt" class=MsoNoSpacing>При расширении вычислительной 
+сети подобной топологии к новому рабочему месту необходимо прокладывать 
+отдельный кабель из центра сети.</P>
+<P style="MARGIN: 0cm 0cm 0pt" class=MsoNoSpacing>Производительность 
+вычислительной сети в первую очередь зависит от производительности центрального 
+файлового сервера, а пропускная способность сети определяется вычислительной 
+мощностью узла и гарантируется для каждой рабочей станции. Коллизий 
+(столкновений) в процессе передачи данных не возникает.</P>
+<P style="MARGIN: 0cm 0cm 0pt" class=MsoNoSpacing>Топология в виде звезды 
+является наиболее быстродействующей из всех топологий вычислительных сетей, 
+поскольку передача данных между рабочими станциями проходит через центральный 
+узел (при его хорошей производительности) по отдельным линиям, используемым 
+только этими станциями.</P>
+<P style="MARGIN: 0cm 0cm 0pt" class=MsoNoSpacing>Однако при данной топологии он 
+может быть узким местом вычислительной сети. В случае выхода из строя 
+центрального узла нарушается работа всей сети.</P>
+<P style="MARGIN: 0cm 0cm 0pt" class=MsoNoSpacing>В настоящее время файловым 
+серверам уделяется особое внимание с точки зрения надежности его работы, а так 
+как для данной топологии характерна простота управления обменом информации и 
+механизмом против несанкционированного доступа, топология типа «звезда» находит 
+широкое распространение при проектировании ЛВС.</P>
+<P style="MARGIN: 0cm 0cm 0pt" class=MsoNoSpacing><B>2.1.2Кольцевая 
+топология</B></P>
+<P style="MARGIN: 0cm 0cm 0pt" class=MsoNoSpacing>При кольцевой топологии сеть 
+не имеет явно выраженного центрального узла (сервера), а рабочие станции связаны 
+одна с другой по кругу ( см. рис. 4 ). Сообщения в подобной топологии 
+циркулируют по кругу в строго заданном направлении. Рабочая станция посылает 
+сообщение заданному адресату, предварительно получив из кольца запрос (маркер). 
+Пересылка сообщений в подобной топологии является эффективной, так как 
+большинство сообщений можно отправлять "в дорогу" по каналу связи одно за 
+другим. </P>
+<P style="MARGIN: 0cm 0cm 0pt" class=MsoNoSpacing>&nbsp;</P>
+<P style="MARGIN: 0cm 0cm 0pt" class=MsoNoSpacing>&nbsp;</P>
+<P style="MARGIN: 0cm 0cm 0pt" 
+class=MsoNoSpacing>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<IMG 
+style="WIDTH: 308px; HEIGHT: 136px" class=image alt=кольцо.jpg 
+src="user-images/кольцо.jpg" 
+width=422 height=147></P>
+<P style="MARGIN: 0cm 0cm 0pt" class=MsoNoSpacing>Каждая рабочая станция может 
+выполнять функции сервера, а банки данных могут быть распределены между 
+станциями.</P>
+<P style="MARGIN: 0cm 0cm 0pt" class=MsoNoSpacing>Основная проблема при 
+кольцевой топологии заключается в том, что каждая рабочая станция должна активно 
+участвовать в пересылке информации, и в случае выхода из строя хотя бы одной из 
+них вся сеть парализуется. Неисправности в кабельных соединениях локализуются 
+легко. Подключение новой рабочей станции требует выключения сети, так как во 
+время установки кольцо должно быть разомкнуто.</P>
+<P style="MARGIN: 0cm 0cm 0pt" class=MsoNoSpacing><o:p>&nbsp;</o:p></P>
+<P style="MARGIN: 0cm 0cm 0pt" class=MsoNoSpacing><o:p>&nbsp;</o:p></P>
+<P style="MARGIN: 0cm 0cm 0pt" class=MsoNoSpacing>Специальной формой кольцевой 
+топологии является логическая кольцевая сеть. Физически она монтируется как 
+соединение звездных топологий. Отдельные звезды включаются с помощью специальных 
+коммутаторов ( англ. Hub - концентратор).</P>
+<P style="MARGIN: 0cm 0cm 0pt" class=MsoNoSpacing>В зависимости от числа рабочих 
+станций и длины кабеля между рабочими станциями применяют активные или пассивные 
+концентраторы ("хабы"). Активные концентраторы дополнительно содержат усилитель 
+для подключения от 4 до 16 рабочих станций. Пассивный концентратор является 
+исключительно разветвительным устройством (максимум на три рабочие станции). 
+Каждой рабочей станции присваивается соответствующий ей адрес, по которому 
+передается управление (от старшего к младшему и от самого младшего к самому 
+старшему). Разрыв соединения происходит только для нижерасположенного 
+(ближайшего) узла вычислительной сети, так что лишь в редких случаях может 
+нарушаться работа всей сети.</P>
+<P style="MARGIN: 0cm 0cm 0pt" class=MsoNoSpacing><o:p>&nbsp;</o:p></P>
+<P style="MARGIN: 0cm 0cm 0pt" class=MsoNoSpacing><B>2.1.3 Шинная 
+топология</B></P>
+<P style="MARGIN: 0cm 0cm 0pt" class=MsoNoSpacing>В сетях с шинной топологией 
+все рабочие станции подключаются к одному каналу связи (коммуникационному пути) 
+с помощью премопередатчиков.Рабочие станции могут непосредственно вступать в 
+контакт с любой рабочей станцией, имеющейся в сети, и могут быть подключены или 
+отключены без нарушения функционирования всей вычислительной сети. Канал 
+оканчивается с двух сторон пассивными терминаторами, которые поглощают 
+передаваемые сигналы, поскольку по своей природе передача в такой сети является 
+широковещательной (длинные линии – из курса теоретические основы 
+электротехники).</P>
+<P style="MARGIN: 0cm 0cm 0pt" class=MsoNoSpacing>Каждая рабочая станция 
+подключается к шине непосредственно к соединителям кабельных секций (тройниковые 
+соединители) либо с помощью специальной врезки, которая просто прокалывает 
+коаксиальный кабель до контакта с центральным проводником.</P>
+<P style="MARGIN: 0cm 0cm 0pt" class=MsoNoSpacing><o:p>&nbsp;</o:p></P>
+<P style="MARGIN: 0cm 0cm 0pt" 
+class=MsoNoSpacing><o:p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</o:p><o:p>&nbsp;<IMG 
+class=image alt=шина.jpg 
+src="user-images/шина.jpg"></o:p></P>
+<P style="MARGIN: 0cm 0cm 0pt" class=MsoNoSpacing><o:p></o:p>&nbsp;</P>
+<P style="MARGIN: 0cm 0cm 0pt" class=MsoNoSpacing>Поскольку один общий канал 
+связи (шина) разделяется между всеми абонентами сети, такие сети называются 
+также моноканальными.</P>
+<P style="MARGIN: 0cm 0cm 0pt" class=MsoNoSpacing>Пропускная способность и 
+задержка в шинных сетях определяется большим числом параметров: методом доступа, 
+полосой пропускания канала связи, числом узлов связи, длиной сообщений и др.</P>
+<P style="MARGIN: 0cm 0cm 0pt" class=MsoNoSpacing>В данной топологии банки 
+данных, также как и в сетях с кольцевой топологией, могут распределяться между 
+рабочими станциями (станции ресурсов).</P>
+<P style="MARGIN: 0cm 0cm 0pt" class=MsoNoSpacing><B>2.1.4 Деревовидная 
+топология</B></P>
+<P style="MARGIN: 0cm 0cm 0pt" class=MsoNoSpacing>В локальной сети такого типа 
+используется комбинация ранее рассмотренных типов топологий: “кольцо-звезда” 
+либо “шина-звезда”.</P>
+<P style="MARGIN: 0cm 0cm 0pt" class=MsoNoSpacing>Сервера подключены к шине сети 
+через контроллер, а к каждому серверу подсоединены звездно рабочие станции. Сети 
+такого типа применяются там, где невозможно непосредственное применение базовых 
+сетевых структур в чистом виде.</P>
+<P style="MARGIN: 0cm 0cm 0pt" class=MsoNoSpacing>&nbsp;</P>
+<P style="MARGIN: 0cm 0cm 0pt" 
+class=MsoNoSpacing>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+<IMG class=image alt=дерево.png 
+src="user-images/дерево.png"></P>
+<P style="MARGIN: 0cm 0cm 0pt" class=MsoNoSpacing>Сети такой топологии обладают 
+преимуществом каждой в отдельности типом сети («кольцо» и «звезда»). И 
+дополнительно удобны при административном управлении сетью.</P>
+<P style="MARGIN: 0cm 0cm 0pt" class=MsoNoSpacing>Недостаток такого типа в том, 
+что выход из строя участка канала связи сети парализует работу группы абонентов 
+этого участка.</P>
+<P style="MARGIN: 0cm 0cm 0pt" class=MsoNoSpacing>Сравнительные характеристики 
+различных топологий локальных сетей представлены в табл. 1.</P>
+<P style="MARGIN: 0cm 0cm 0pt" class=MsoNoSpacing><o:p>&nbsp;</o:p></P>
+<P style="MARGIN: 0cm 0cm 0pt" class=MsoNoSpacing><SPAN 
+style="mso-ansi-language: EN-US" lang=EN-US><o:p>&nbsp;</o:p></SPAN></P>
+<P style="MARGIN: 0cm 0cm 0pt" class=MsoNoSpacing>Таблица 1</P>
+<TABLE style="mso-cellspacing: 1.5pt; mso-yfti-tbllook: 1184" 
+class=MsoNormalTable border=0 cellPadding=0>
+  <TBODY>
+  <TR style="mso-yfti-irow: 0; mso-yfti-firstrow: yes">
+    <TD 
+    style="BORDER-BOTTOM: black 1pt solid; BORDER-LEFT: black 1pt solid; PADDING-BOTTOM: 0.75pt; BACKGROUND-COLOR: transparent; PADDING-LEFT: 0.75pt; WIDTH: 140.25pt; PADDING-RIGHT: 0.75pt; BORDER-TOP: black 1pt solid; BORDER-RIGHT: #f0f0f0; PADDING-TOP: 0.75pt; mso-border-top-alt: solid black .75pt; mso-border-left-alt: solid black .75pt; mso-border-bottom-alt: solid black .75pt" 
+    vAlign=top rowSpan=2 width=187>
+      <P style="MARGIN: 0cm 0cm 0pt" class=MsoNoSpacing><B><SPAN 
+      style="mso-fareast-font-family: 'Times New Roman'">Характеристики</SPAN></B><SPAN 
+      style="mso-fareast-font-family: 'Times New Roman'"><o:p></o:p></SPAN></P></TD>
+    <TD 
+    style="BORDER-BOTTOM: black 1pt solid; BORDER-LEFT: black 1pt solid; PADDING-BOTTOM: 0cm; BACKGROUND-COLOR: transparent; PADDING-LEFT: 5.75pt; WIDTH: 333pt; PADDING-RIGHT: 5.75pt; BORDER-TOP: black 1pt solid; BORDER-RIGHT: black 1pt solid; PADDING-TOP: 0cm; mso-border-alt: solid black .75pt" 
+    vAlign=top width=444 colSpan=4>
+      <P style="MARGIN: 0cm 0cm 0pt" class=MsoNoSpacing>Топология</P></TD></TR>
+  <TR style="mso-yfti-irow: 1">
+    <TD 
+    style="BORDER-BOTTOM: black 1pt solid; BORDER-LEFT: black 1pt solid; PADDING-BOTTOM: 0.75pt; BACKGROUND-COLOR: transparent; PADDING-LEFT: 0.75pt; WIDTH: 78.75pt; PADDING-RIGHT: 0.75pt; BORDER-TOP: black 1pt solid; BORDER-RIGHT: #f0f0f0; PADDING-TOP: 0.75pt; mso-border-top-alt: solid black .75pt; mso-border-left-alt: solid black .75pt; mso-border-bottom-alt: solid black .75pt" 
+    vAlign=top width=105>
+      <P style="MARGIN: 0cm 0cm 0pt" class=MsoNoSpacing>Звезда</P></TD>
+    <TD 
+    style="BORDER-BOTTOM: black 1pt solid; BORDER-LEFT: black 1pt solid; PADDING-BOTTOM: 0.75pt; BACKGROUND-COLOR: transparent; PADDING-LEFT: 0.75pt; WIDTH: 76.5pt; PADDING-RIGHT: 0.75pt; BORDER-TOP: black 1pt solid; BORDER-RIGHT: #f0f0f0; PADDING-TOP: 0.75pt; mso-border-top-alt: solid black .75pt; mso-border-left-alt: solid black .75pt; mso-border-bottom-alt: solid black .75pt" 
+    vAlign=top width=102>
+      <P style="MARGIN: 0cm 0cm 0pt" class=MsoNoSpacing>Кольцо</P></TD>
+    <TD 
+    style="BORDER-BOTTOM: black 1pt solid; BORDER-LEFT: black 1pt solid; PADDING-BOTTOM: 0.75pt; BACKGROUND-COLOR: transparent; PADDING-LEFT: 0.75pt; WIDTH: 74.25pt; PADDING-RIGHT: 0.75pt; BORDER-TOP: black 1pt solid; BORDER-RIGHT: #f0f0f0; PADDING-TOP: 0.75pt; mso-border-top-alt: solid black .75pt; mso-border-left-alt: solid black .75pt; mso-border-bottom-alt: solid black .75pt" 
+    vAlign=top width=99>
+      <P style="MARGIN: 0cm 0cm 0pt" class=MsoNoSpacing>шина</P></TD>
+    <TD 
+    style="BORDER-BOTTOM: black 1pt solid; BORDER-LEFT: black 1pt solid; PADDING-BOTTOM: 0cm; BACKGROUND-COLOR: transparent; PADDING-LEFT: 5.75pt; WIDTH: 67.5pt; PADDING-RIGHT: 5.75pt; BORDER-TOP: black 1pt solid; BORDER-RIGHT: black 1pt solid; PADDING-TOP: 0cm; mso-border-alt: solid black .75pt" 
+    vAlign=top width=90>
+      <P style="MARGIN: 0cm 0cm 0pt" class=MsoNoSpacing>дерево</P></TD></TR>
+  <TR style="HEIGHT: 11.25pt; mso-yfti-irow: 2">
+    <TD 
+    style="BORDER-BOTTOM: black 1pt solid; BORDER-LEFT: black 1pt solid; PADDING-BOTTOM: 0.75pt; BACKGROUND-COLOR: transparent; PADDING-LEFT: 0.75pt; WIDTH: 140.25pt; PADDING-RIGHT: 0.75pt; HEIGHT: 11.25pt; BORDER-TOP: black 1pt solid; BORDER-RIGHT: #f0f0f0; PADDING-TOP: 0.75pt; mso-border-top-alt: solid black .75pt; mso-border-left-alt: solid black .75pt; mso-border-bottom-alt: solid black .75pt" 
+    vAlign=top width=187>
+      <P style="MARGIN: 0cm 0cm 0pt" class=MsoNoSpacing>Сложность 
+    интерфейса</P></TD>
+    <TD 
+    style="BORDER-BOTTOM: black 1pt solid; BORDER-LEFT: black 1pt solid; PADDING-BOTTOM: 0.75pt; BACKGROUND-COLOR: transparent; PADDING-LEFT: 0.75pt; WIDTH: 78.75pt; PADDING-RIGHT: 0.75pt; HEIGHT: 11.25pt; BORDER-TOP: black 1pt solid; BORDER-RIGHT: #f0f0f0; PADDING-TOP: 0.75pt; mso-border-top-alt: solid black .75pt; mso-border-left-alt: solid black .75pt; mso-border-bottom-alt: solid black .75pt" 
+    vAlign=top width=105>
+      <P style="MARGIN: 0cm 0cm 0pt" class=MsoNoSpacing>малая </P></TD>
+    <TD 
+    style="BORDER-BOTTOM: black 1pt solid; BORDER-LEFT: black 1pt solid; PADDING-BOTTOM: 0.75pt; BACKGROUND-COLOR: transparent; PADDING-LEFT: 0.75pt; WIDTH: 76.5pt; PADDING-RIGHT: 0.75pt; HEIGHT: 11.25pt; BORDER-TOP: black 1pt solid; BORDER-RIGHT: #f0f0f0; PADDING-TOP: 0.75pt; mso-border-top-alt: solid black .75pt; mso-border-left-alt: solid black .75pt; mso-border-bottom-alt: solid black .75pt" 
+    vAlign=top width=102>
+      <P style="MARGIN: 0cm 0cm 0pt" class=MsoNoSpacing>малая</P></TD>
+    <TD 
+    style="BORDER-BOTTOM: black 1pt solid; BORDER-LEFT: black 1pt solid; PADDING-BOTTOM: 0.75pt; BACKGROUND-COLOR: transparent; PADDING-LEFT: 0.75pt; WIDTH: 74.25pt; PADDING-RIGHT: 0.75pt; HEIGHT: 11.25pt; BORDER-TOP: black 1pt solid; BORDER-RIGHT: #f0f0f0; PADDING-TOP: 0.75pt; mso-border-top-alt: solid black .75pt; mso-border-left-alt: solid black .75pt; mso-border-bottom-alt: solid black .75pt" 
+    vAlign=top width=99>
+      <P style="MARGIN: 0cm 0cm 0pt" class=MsoNoSpacing>малая/</P>
+      <P style="MARGIN: 0cm 0cm 0pt" class=MsoNoSpacing>средняя</P></TD>
+    <TD 
+    style="BORDER-BOTTOM: black 1pt solid; BORDER-LEFT: black 1pt solid; PADDING-BOTTOM: 0cm; BACKGROUND-COLOR: transparent; PADDING-LEFT: 5.75pt; WIDTH: 67.5pt; PADDING-RIGHT: 5.75pt; HEIGHT: 11.25pt; BORDER-TOP: black 1pt solid; BORDER-RIGHT: black 1pt solid; PADDING-TOP: 0cm; mso-border-alt: solid black .75pt" 
+    vAlign=top width=90>
+      <P style="MARGIN: 0cm 0cm 0pt" class=MsoNoSpacing>средняя</P></TD></TR>
+  <TR style="HEIGHT: 11.25pt; mso-yfti-irow: 3">
+    <TD 
+    style="BORDER-BOTTOM: black 1pt solid; BORDER-LEFT: black 1pt solid; PADDING-BOTTOM: 0.75pt; BACKGROUND-COLOR: transparent; PADDING-LEFT: 0.75pt; WIDTH: 140.25pt; PADDING-RIGHT: 0.75pt; HEIGHT: 11.25pt; BORDER-TOP: black 1pt solid; BORDER-RIGHT: #f0f0f0; PADDING-TOP: 0.75pt; mso-border-top-alt: solid black .75pt; mso-border-left-alt: solid black .75pt; mso-border-bottom-alt: solid black .75pt" 
+    vAlign=top width=187>
+      <P style="MARGIN: 0cm 0cm 0pt" class=MsoNoSpacing>Наращиваемость</P></TD>
+    <TD 
+    style="BORDER-BOTTOM: black 1pt solid; BORDER-LEFT: black 1pt solid; PADDING-BOTTOM: 0.75pt; BACKGROUND-COLOR: transparent; PADDING-LEFT: 0.75pt; WIDTH: 78.75pt; PADDING-RIGHT: 0.75pt; HEIGHT: 11.25pt; BORDER-TOP: black 1pt solid; BORDER-RIGHT: #f0f0f0; PADDING-TOP: 0.75pt; mso-border-top-alt: solid black .75pt; mso-border-left-alt: solid black .75pt; mso-border-bottom-alt: solid black .75pt" 
+    vAlign=top width=105>
+      <P style="MARGIN: 0cm 0cm 0pt" class=MsoNoSpacing>малая</P></TD>
+    <TD 
+    style="BORDER-BOTTOM: black 1pt solid; BORDER-LEFT: black 1pt solid; PADDING-BOTTOM: 0.75pt; BACKGROUND-COLOR: transparent; PADDING-LEFT: 0.75pt; WIDTH: 76.5pt; PADDING-RIGHT: 0.75pt; HEIGHT: 11.25pt; BORDER-TOP: black 1pt solid; BORDER-RIGHT: #f0f0f0; PADDING-TOP: 0.75pt; mso-border-top-alt: solid black .75pt; mso-border-left-alt: solid black .75pt; mso-border-bottom-alt: solid black .75pt" 
+    vAlign=top width=102>
+      <P style="MARGIN: 0cm 0cm 0pt" class=MsoNoSpacing>средняя</P></TD>
+    <TD 
+    style="BORDER-BOTTOM: black 1pt solid; BORDER-LEFT: black 1pt solid; PADDING-BOTTOM: 0.75pt; BACKGROUND-COLOR: transparent; PADDING-LEFT: 0.75pt; WIDTH: 74.25pt; PADDING-RIGHT: 0.75pt; HEIGHT: 11.25pt; BORDER-TOP: black 1pt solid; BORDER-RIGHT: #f0f0f0; PADDING-TOP: 0.75pt; mso-border-top-alt: solid black .75pt; mso-border-left-alt: solid black .75pt; mso-border-bottom-alt: solid black .75pt" 
+    vAlign=top width=99>
+      <P style="MARGIN: 0cm 0cm 0pt" class=MsoNoSpacing>высокая</P></TD>
+    <TD 
+    style="BORDER-BOTTOM: black 1pt solid; BORDER-LEFT: black 1pt solid; PADDING-BOTTOM: 0cm; BACKGROUND-COLOR: transparent; PADDING-LEFT: 5.75pt; WIDTH: 67.5pt; PADDING-RIGHT: 5.75pt; HEIGHT: 11.25pt; BORDER-TOP: black 1pt solid; BORDER-RIGHT: black 1pt solid; PADDING-TOP: 0cm; mso-border-alt: solid black .75pt" 
+    vAlign=top width=90>
+      <P style="MARGIN: 0cm 0cm 0pt" class=MsoNoSpacing>высокая</P></TD></TR>
+  <TR style="HEIGHT: 11.25pt; mso-yfti-irow: 4">
+    <TD 
+    style="BORDER-BOTTOM: black 1pt solid; BORDER-LEFT: black 1pt solid; PADDING-BOTTOM: 0.75pt; BACKGROUND-COLOR: transparent; PADDING-LEFT: 0.75pt; WIDTH: 140.25pt; PADDING-RIGHT: 0.75pt; HEIGHT: 11.25pt; BORDER-TOP: black 1pt solid; BORDER-RIGHT: #f0f0f0; PADDING-TOP: 0.75pt; mso-border-top-alt: solid black .75pt; mso-border-left-alt: solid black .75pt; mso-border-bottom-alt: solid black .75pt" 
+    vAlign=top width=187>
+      <P style="MARGIN: 0cm 0cm 0pt" class=MsoNoSpacing>Надежность</P></TD>
+    <TD 
+    style="BORDER-BOTTOM: black 1pt solid; BORDER-LEFT: black 1pt solid; PADDING-BOTTOM: 0.75pt; BACKGROUND-COLOR: transparent; PADDING-LEFT: 0.75pt; WIDTH: 78.75pt; PADDING-RIGHT: 0.75pt; HEIGHT: 11.25pt; BORDER-TOP: black 1pt solid; BORDER-RIGHT: #f0f0f0; PADDING-TOP: 0.75pt; mso-border-top-alt: solid black .75pt; mso-border-left-alt: solid black .75pt; mso-border-bottom-alt: solid black .75pt" 
+    vAlign=top width=105>
+      <P style="MARGIN: 0cm 0cm 0pt" class=MsoNoSpacing>средне/</P>
+      <P style="MARGIN: 0cm 0cm 0pt" class=MsoNoSpacing>высокая</P></TD>
+    <TD 
+    style="BORDER-BOTTOM: black 1pt solid; BORDER-LEFT: black 1pt solid; PADDING-BOTTOM: 0.75pt; BACKGROUND-COLOR: transparent; PADDING-LEFT: 0.75pt; WIDTH: 76.5pt; PADDING-RIGHT: 0.75pt; HEIGHT: 11.25pt; BORDER-TOP: black 1pt solid; BORDER-RIGHT: #f0f0f0; PADDING-TOP: 0.75pt; mso-border-top-alt: solid black .75pt; mso-border-left-alt: solid black .75pt; mso-border-bottom-alt: solid black .75pt" 
+    vAlign=top width=102>
+      <P style="MARGIN: 0cm 0cm 0pt" class=MsoNoSpacing>высокая</P></TD>
+    <TD 
+    style="BORDER-BOTTOM: black 1pt solid; BORDER-LEFT: black 1pt solid; PADDING-BOTTOM: 0.75pt; BACKGROUND-COLOR: transparent; PADDING-LEFT: 0.75pt; WIDTH: 74.25pt; PADDING-RIGHT: 0.75pt; HEIGHT: 11.25pt; BORDER-TOP: black 1pt solid; BORDER-RIGHT: #f0f0f0; PADDING-TOP: 0.75pt; mso-border-top-alt: solid black .75pt; mso-border-left-alt: solid black .75pt; mso-border-bottom-alt: solid black .75pt" 
+    vAlign=top width=99>
+      <P style="MARGIN: 0cm 0cm 0pt" class=MsoNoSpacing>высокая</P></TD>
+    <TD 
+    style="BORDER-BOTTOM: black 1pt solid; BORDER-LEFT: black 1pt solid; PADDING-BOTTOM: 0cm; BACKGROUND-COLOR: transparent; PADDING-LEFT: 5.75pt; WIDTH: 67.5pt; PADDING-RIGHT: 5.75pt; HEIGHT: 11.25pt; BORDER-TOP: black 1pt solid; BORDER-RIGHT: black 1pt solid; PADDING-TOP: 0cm; mso-border-alt: solid black .75pt" 
+    vAlign=top width=90>
+      <P style="MARGIN: 0cm 0cm 0pt" class=MsoNoSpacing>высокая</P></TD></TR>
+  <TR style="HEIGHT: 11.25pt; mso-yfti-irow: 5">
+    <TD 
+    style="BORDER-BOTTOM: black 1pt solid; BORDER-LEFT: black 1pt solid; PADDING-BOTTOM: 0.75pt; BACKGROUND-COLOR: transparent; PADDING-LEFT: 0.75pt; WIDTH: 140.25pt; PADDING-RIGHT: 0.75pt; HEIGHT: 11.25pt; BORDER-TOP: black 1pt solid; BORDER-RIGHT: #f0f0f0; PADDING-TOP: 0.75pt; mso-border-top-alt: solid black .75pt; mso-border-left-alt: solid black .75pt; mso-border-bottom-alt: solid black .75pt" 
+    vAlign=top width=187>
+      <P style="MARGIN: 0cm 0cm 0pt" class=MsoNoSpacing>Стоимость 
+    подключения</P></TD>
+    <TD 
+    style="BORDER-BOTTOM: black 1pt solid; BORDER-LEFT: black 1pt solid; PADDING-BOTTOM: 0.75pt; BACKGROUND-COLOR: transparent; PADDING-LEFT: 0.75pt; WIDTH: 78.75pt; PADDING-RIGHT: 0.75pt; HEIGHT: 11.25pt; BORDER-TOP: black 1pt solid; BORDER-RIGHT: #f0f0f0; PADDING-TOP: 0.75pt; mso-border-top-alt: solid black .75pt; mso-border-left-alt: solid black .75pt; mso-border-bottom-alt: solid black .75pt" 
+    vAlign=top width=105>
+      <P style="MARGIN: 0cm 0cm 0pt" class=MsoNoSpacing>высокая</P></TD>
+    <TD 
+    style="BORDER-BOTTOM: black 1pt solid; BORDER-LEFT: black 1pt solid; PADDING-BOTTOM: 0.75pt; BACKGROUND-COLOR: transparent; PADDING-LEFT: 0.75pt; WIDTH: 76.5pt; PADDING-RIGHT: 0.75pt; HEIGHT: 11.25pt; BORDER-TOP: black 1pt solid; BORDER-RIGHT: #f0f0f0; PADDING-TOP: 0.75pt; mso-border-top-alt: solid black .75pt; mso-border-left-alt: solid black .75pt; mso-border-bottom-alt: solid black .75pt" 
+    vAlign=top width=102>
+      <P style="MARGIN: 0cm 0cm 0pt" class=MsoNoSpacing>средняя</P></TD>
+    <TD 
+    style="BORDER-BOTTOM: black 1pt solid; BORDER-LEFT: black 1pt solid; PADDING-BOTTOM: 0.75pt; BACKGROUND-COLOR: transparent; PADDING-LEFT: 0.75pt; WIDTH: 74.25pt; PADDING-RIGHT: 0.75pt; HEIGHT: 11.25pt; BORDER-TOP: black 1pt solid; BORDER-RIGHT: #f0f0f0; PADDING-TOP: 0.75pt; mso-border-top-alt: solid black .75pt; mso-border-left-alt: solid black .75pt; mso-border-bottom-alt: solid black .75pt" 
+    vAlign=top width=99>
+      <P style="MARGIN: 0cm 0cm 0pt" class=MsoNoSpacing>низкая</P></TD>
+    <TD 
+    style="BORDER-BOTTOM: black 1pt solid; BORDER-LEFT: black 1pt solid; PADDING-BOTTOM: 0cm; BACKGROUND-COLOR: transparent; PADDING-LEFT: 5.75pt; WIDTH: 67.5pt; PADDING-RIGHT: 5.75pt; HEIGHT: 11.25pt; BORDER-TOP: black 1pt solid; BORDER-RIGHT: black 1pt solid; PADDING-TOP: 0cm; mso-border-alt: solid black .75pt" 
+    vAlign=top width=90>
+      <P style="MARGIN: 0cm 0cm 0pt" class=MsoNoSpacing>низкая</P></TD></TR>
+  <TR style="HEIGHT: 11.25pt; mso-yfti-irow: 6">
+    <TD 
+    style="BORDER-BOTTOM: black 1pt solid; BORDER-LEFT: black 1pt solid; PADDING-BOTTOM: 0.75pt; BACKGROUND-COLOR: transparent; PADDING-LEFT: 0.75pt; WIDTH: 140.25pt; PADDING-RIGHT: 0.75pt; HEIGHT: 11.25pt; BORDER-TOP: black 1pt solid; BORDER-RIGHT: #f0f0f0; PADDING-TOP: 0.75pt; mso-border-top-alt: solid black .75pt; mso-border-left-alt: solid black .75pt; mso-border-bottom-alt: solid black .75pt" 
+    vAlign=top width=187>
+      <P style="MARGIN: 0cm 0cm 0pt" class=MsoNoSpacing>Работа в реальном 
+      времени</P></TD>
+    <TD 
+    style="BORDER-BOTTOM: black 1pt solid; BORDER-LEFT: black 1pt solid; PADDING-BOTTOM: 0.75pt; BACKGROUND-COLOR: transparent; PADDING-LEFT: 0.75pt; WIDTH: 78.75pt; PADDING-RIGHT: 0.75pt; HEIGHT: 11.25pt; BORDER-TOP: black 1pt solid; BORDER-RIGHT: #f0f0f0; PADDING-TOP: 0.75pt; mso-border-top-alt: solid black .75pt; mso-border-left-alt: solid black .75pt; mso-border-bottom-alt: solid black .75pt" 
+    vAlign=top width=105>
+      <P style="MARGIN: 0cm 0cm 0pt" class=MsoNoSpacing>очень</P>
+      <P style="MARGIN: 0cm 0cm 0pt" class=MsoNoSpacing>хорошая</P></TD>
+    <TD 
+    style="BORDER-BOTTOM: black 1pt solid; BORDER-LEFT: black 1pt solid; PADDING-BOTTOM: 0.75pt; BACKGROUND-COLOR: transparent; PADDING-LEFT: 0.75pt; WIDTH: 76.5pt; PADDING-RIGHT: 0.75pt; HEIGHT: 11.25pt; BORDER-TOP: black 1pt solid; BORDER-RIGHT: #f0f0f0; PADDING-TOP: 0.75pt; mso-border-top-alt: solid black .75pt; mso-border-left-alt: solid black .75pt; mso-border-bottom-alt: solid black .75pt" 
+    vAlign=top width=102>
+      <P style="MARGIN: 0cm 0cm 0pt" class=MsoNoSpacing>хорошая</P></TD>
+    <TD 
+    style="BORDER-BOTTOM: black 1pt solid; BORDER-LEFT: black 1pt solid; PADDING-BOTTOM: 0.75pt; BACKGROUND-COLOR: transparent; PADDING-LEFT: 0.75pt; WIDTH: 74.25pt; PADDING-RIGHT: 0.75pt; HEIGHT: 11.25pt; BORDER-TOP: black 1pt solid; BORDER-RIGHT: #f0f0f0; PADDING-TOP: 0.75pt; mso-border-top-alt: solid black .75pt; mso-border-left-alt: solid black .75pt; mso-border-bottom-alt: solid black .75pt" 
+    vAlign=top width=99>
+      <P style="MARGIN: 0cm 0cm 0pt" class=MsoNoSpacing>плохая</P></TD>
+    <TD 
+    style="BORDER-BOTTOM: black 1pt solid; BORDER-LEFT: black 1pt solid; PADDING-BOTTOM: 0cm; BACKGROUND-COLOR: transparent; PADDING-LEFT: 5.75pt; WIDTH: 67.5pt; PADDING-RIGHT: 5.75pt; HEIGHT: 11.25pt; BORDER-TOP: black 1pt solid; BORDER-RIGHT: black 1pt solid; PADDING-TOP: 0cm; mso-border-alt: solid black .75pt" 
+    vAlign=top width=90>
+      <P style="MARGIN: 0cm 0cm 0pt" class=MsoNoSpacing>средняя</P></TD></TR>
+  <TR style="HEIGHT: 10.5pt; mso-yfti-irow: 7; mso-yfti-lastrow: yes">
+    <TD 
+    style="BORDER-BOTTOM: black 1pt solid; BORDER-LEFT: black 1pt solid; PADDING-BOTTOM: 0.75pt; BACKGROUND-COLOR: transparent; PADDING-LEFT: 0.75pt; WIDTH: 140.25pt; PADDING-RIGHT: 0.75pt; HEIGHT: 10.5pt; BORDER-TOP: black 1pt solid; BORDER-RIGHT: #f0f0f0; PADDING-TOP: 0.75pt; mso-border-top-alt: solid black .75pt; mso-border-left-alt: solid black .75pt; mso-border-bottom-alt: solid black .75pt" 
+    vAlign=top width=187>
+      <P style="MARGIN: 0cm 0cm 0pt" class=MsoNoSpacing>Разводка кабеля</P></TD>
+    <TD 
+    style="BORDER-BOTTOM: black 1pt solid; BORDER-LEFT: black 1pt solid; PADDING-BOTTOM: 0.75pt; BACKGROUND-COLOR: transparent; PADDING-LEFT: 0.75pt; WIDTH: 78.75pt; PADDING-RIGHT: 0.75pt; HEIGHT: 10.5pt; BORDER-TOP: black 1pt solid; BORDER-RIGHT: #f0f0f0; PADDING-TOP: 0.75pt; mso-border-top-alt: solid black .75pt; mso-border-left-alt: solid black .75pt; mso-border-bottom-alt: solid black .75pt" 
+    vAlign=top width=105>
+      <P style="MARGIN: 0cm 0cm 0pt" class=MsoNoSpacing>хорошая</P></TD>
+    <TD 
+    style="BORDER-BOTTOM: black 1pt solid; BORDER-LEFT: black 1pt solid; PADDING-BOTTOM: 0.75pt; BACKGROUND-COLOR: transparent; PADDING-LEFT: 0.75pt; WIDTH: 76.5pt; PADDING-RIGHT: 0.75pt; HEIGHT: 10.5pt; BORDER-TOP: black 1pt solid; BORDER-RIGHT: #f0f0f0; PADDING-TOP: 0.75pt; mso-border-top-alt: solid black .75pt; mso-border-left-alt: solid black .75pt; mso-border-bottom-alt: solid black .75pt" 
+    vAlign=top width=102>
+      <P style="MARGIN: 0cm 0cm 0pt" 
+class=MsoNoSpacing>удовлетворительная</P></TD>
+    <TD 
+    style="BORDER-BOTTOM: black 1pt solid; BORDER-LEFT: black 1pt solid; PADDING-BOTTOM: 0.75pt; BACKGROUND-COLOR: transparent; PADDING-LEFT: 0.75pt; WIDTH: 74.25pt; PADDING-RIGHT: 0.75pt; HEIGHT: 10.5pt; BORDER-TOP: black 1pt solid; BORDER-RIGHT: #f0f0f0; PADDING-TOP: 0.75pt; mso-border-top-alt: solid black .75pt; mso-border-left-alt: solid black .75pt; mso-border-bottom-alt: solid black .75pt" 
+    vAlign=top width=99>
+      <P style="MARGIN: 0cm 0cm 0pt" class=MsoNoSpacing>хорошая</P></TD>
+    <TD 
+    style="BORDER-BOTTOM: black 1pt solid; BORDER-LEFT: black 1pt solid; PADDING-BOTTOM: 0cm; BACKGROUND-COLOR: transparent; PADDING-LEFT: 5.75pt; WIDTH: 67.5pt; PADDING-RIGHT: 5.75pt; HEIGHT: 10.5pt; BORDER-TOP: black 1pt solid; BORDER-RIGHT: black 1pt solid; PADDING-TOP: 0cm; mso-border-alt: solid black .75pt" 
+    vAlign=top width=90>
+      <P style="MARGIN: 0cm 0cm 0pt" 
+class=MsoNoSpacing>хорошая</P></TD></TR></TBODY></TABLE>
+<P style="MARGIN: 0cm 0cm 0pt" class=MsoNormal><A 
+name=_GoBack></A><o:p>&nbsp;</o:p></P>
+
+				</div>
+			</div>
+		<div style="clear: both;">&nbsp;</div>
+		</div>
+		<!-- end #content -->
+		<div id="sidebar">
+			<ul>
+				<li>
+					<ul>
+						<li><a style="" href="index.html">Главная</a></li>
+
+					</ul>
+				</li>
+				<li>
+					<h2>Перечень страниц</h2>
+					<ul>
+						<li><a style="" href="index.html">Главная</a></li>
+<li class="active"><a style="" href="page1.html">1.Топология  1</a></li>
+<li><a style="" href="page2.html">2.Топология  2</a></li>
+<li><a style="" href="page3.html">3.osi/tcp-ip</a></li>
+
+					</ul>
+				</li>
+				
+			</ul>
+		</div>
+		<!-- end #sidebar -->
+		<div style="clear: both;">&nbsp;</div>
+	</div>
+	</div>
+	</div>
+	<!-- end #page -->
+</div>
+	<div id="footer">
+		<p>Автор:Садуахава Темерлансер | <a href="http://www.freecsstemplates.org/">Free CSS Templates</a> | <a href="http://brullworfel.ru/turbosite">TurboSite</a></p>
+	</div>
+	<!-- end #footer -->
+</body>
+</html>
